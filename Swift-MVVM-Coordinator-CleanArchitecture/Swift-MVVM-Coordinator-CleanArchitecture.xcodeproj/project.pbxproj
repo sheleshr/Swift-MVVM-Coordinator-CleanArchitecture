@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C369DFE32A5FDC99004D5298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369DFE22A5FDC99004D5298 /* AppDelegate.swift */; };
+		C369DFE52A5FDC99004D5298 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369DFE42A5FDC99004D5298 /* SceneDelegate.swift */; };
+		C369DFEC2A5FDC9A004D5298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C369DFEB2A5FDC9A004D5298 /* Assets.xcassets */; };
+		C369DFEF2A5FDC9A004D5298 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C369DFED2A5FDC9A004D5298 /* LaunchScreen.storyboard */; };
+		C369DFF82A5FDEC5004D5298 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369DFF72A5FDEC5004D5298 /* Coordinator.swift */; };
+		C369DFFC2A5FEF37004D5298 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C369DFFB2A5FEF37004D5298 /* Auth.storyboard */; };
+		C369E0012A5FF28A004D5298 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369E0002A5FF28A004D5298 /* LoginViewController.swift */; };
+		C369E0042A5FF801004D5298 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369E0032A5FF801004D5298 /* LoginCoordinator.swift */; };
+		C369E0062A60231D004D5298 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369E0052A60231D004D5298 /* SignupCoordinator.swift */; };
+		C369E0082A60232C004D5298 /* ForgotPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369E0072A60232C004D5298 /* ForgotPasswordCoordinator.swift */; };
+		C369E00A2A602373004D5298 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369E0092A602373004D5298 /* SignupViewController.swift */; };
+		C369E00C2A60237F004D5298 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369E00B2A60237F004D5298 /* ForgotPasswordViewController.swift */; };
+		C3A5EC692A60387D00FCCF2F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5EC682A60387D00FCCF2F /* LoginViewModel.swift */; };
+		C3A5EC6B2A60388C00FCCF2F /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5EC6A2A60388C00FCCF2F /* SignupViewModel.swift */; };
+		C3A5EC6D2A60389F00FCCF2F /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5EC6C2A60389F00FCCF2F /* ForgotPasswordViewModel.swift */; };
+		C3A5EC712A60478600FCCF2F /* ForgotPasswordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5EC702A60478600FCCF2F /* ForgotPasswordUseCase.swift */; };
+		C3A5EC732A60481B00FCCF2F /* ForgotPasswordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5EC722A60481B00FCCF2F /* ForgotPasswordStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C369DFDF2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-MVVM-Coordinator-CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C369DFE22A5FDC99004D5298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C369DFE42A5FDC99004D5298 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C369DFEB2A5FDC9A004D5298 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C369DFEE2A5FDC9A004D5298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C369DFF02A5FDC9A004D5298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C369DFF72A5FDEC5004D5298 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C369DFFB2A5FEF37004D5298 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		C369E0002A5FF28A004D5298 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C369E0032A5FF801004D5298 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		C369E0052A60231D004D5298 /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		C369E0072A60232C004D5298 /* ForgotPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCoordinator.swift; sourceTree = "<group>"; };
+		C369E0092A602373004D5298 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		C369E00B2A60237F004D5298 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		C3A5EC682A60387D00FCCF2F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C3A5EC6A2A60388C00FCCF2F /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		C3A5EC6C2A60389F00FCCF2F /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		C3A5EC702A60478600FCCF2F /* ForgotPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordUseCase.swift; sourceTree = "<group>"; };
+		C3A5EC722A60481B00FCCF2F /* ForgotPasswordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C369DFDC2A5FDC99004D5298 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C369DFD62A5FDC99004D5298 = {
+			isa = PBXGroup;
+			children = (
+				C369DFE12A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */,
+				C369DFE02A5FDC99004D5298 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C369DFE02A5FDC99004D5298 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C369DFDF2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C369DFE12A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				C3A5EC6F2A60474D00FCCF2F /* Data-Layer */,
+				C3A5EC6E2A60472D00FCCF2F /* Domain-Layer */,
+				C3A5EC672A60385F00FCCF2F /* ViewModel */,
+				C369DFFB2A5FEF37004D5298 /* Auth.storyboard */,
+				C369DFED2A5FDC9A004D5298 /* LaunchScreen.storyboard */,
+				C369E0022A5FF7E4004D5298 /* Coordinators */,
+				C369DFFD2A5FEFF3004D5298 /* ViewControllers */,
+				C369DFF62A5FDD26004D5298 /* ArchitectureBase */,
+				C369DFE22A5FDC99004D5298 /* AppDelegate.swift */,
+				C369DFE42A5FDC99004D5298 /* SceneDelegate.swift */,
+				C369DFEB2A5FDC9A004D5298 /* Assets.xcassets */,
+				C369DFF02A5FDC9A004D5298 /* Info.plist */,
+			);
+			path = "Swift-MVVM-Coordinator-CleanArchitecture";
+			sourceTree = "<group>";
+		};
+		C369DFF62A5FDD26004D5298 /* ArchitectureBase */ = {
+			isa = PBXGroup;
+			children = (
+				C369DFF72A5FDEC5004D5298 /* Coordinator.swift */,
+			);
+			path = ArchitectureBase;
+			sourceTree = "<group>";
+		};
+		C369DFFD2A5FEFF3004D5298 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C369E0002A5FF28A004D5298 /* LoginViewController.swift */,
+				C369E0092A602373004D5298 /* SignupViewController.swift */,
+				C369E00B2A60237F004D5298 /* ForgotPasswordViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C369E0022A5FF7E4004D5298 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C369E0032A5FF801004D5298 /* LoginCoordinator.swift */,
+				C369E0052A60231D004D5298 /* SignupCoordinator.swift */,
+				C369E0072A60232C004D5298 /* ForgotPasswordCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		C3A5EC672A60385F00FCCF2F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3A5EC682A60387D00FCCF2F /* LoginViewModel.swift */,
+				C3A5EC6A2A60388C00FCCF2F /* SignupViewModel.swift */,
+				C3A5EC6C2A60389F00FCCF2F /* ForgotPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C3A5EC6E2A60472D00FCCF2F /* Domain-Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C3A5EC702A60478600FCCF2F /* ForgotPasswordUseCase.swift */,
+			);
+			path = "Domain-Layer";
+			sourceTree = "<group>";
+		};
+		C3A5EC6F2A60474D00FCCF2F /* Data-Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C3A5EC722A60481B00FCCF2F /* ForgotPasswordStore.swift */,
+			);
+			path = "Data-Layer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C369DFDE2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C369DFF32A5FDC9A004D5298 /* Build configuration list for PBXNativeTarget "Swift-MVVM-Coordinator-CleanArchitecture" */;
+			buildPhases = (
+				C369DFDB2A5FDC99004D5298 /* Sources */,
+				C369DFDC2A5FDC99004D5298 /* Frameworks */,
+				C369DFDD2A5FDC99004D5298 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-MVVM-Coordinator-CleanArchitecture";
+			productName = "Swift-MVVM-Coordinator-CleanArchitecture";
+			productReference = C369DFDF2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C369DFD72A5FDC99004D5298 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C369DFDE2A5FDC99004D5298 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C369DFDA2A5FDC99004D5298 /* Build configuration list for PBXProject "Swift-MVVM-Coordinator-CleanArchitecture" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C369DFD62A5FDC99004D5298;
+			productRefGroup = C369DFE02A5FDC99004D5298 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C369DFDE2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C369DFDD2A5FDC99004D5298 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C369DFFC2A5FEF37004D5298 /* Auth.storyboard in Resources */,
+				C369DFEF2A5FDC9A004D5298 /* LaunchScreen.storyboard in Resources */,
+				C369DFEC2A5FDC9A004D5298 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C369DFDB2A5FDC99004D5298 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A5EC6D2A60389F00FCCF2F /* ForgotPasswordViewModel.swift in Sources */,
+				C369E0012A5FF28A004D5298 /* LoginViewController.swift in Sources */,
+				C369DFF82A5FDEC5004D5298 /* Coordinator.swift in Sources */,
+				C369E00A2A602373004D5298 /* SignupViewController.swift in Sources */,
+				C369E0042A5FF801004D5298 /* LoginCoordinator.swift in Sources */,
+				C3A5EC732A60481B00FCCF2F /* ForgotPasswordStore.swift in Sources */,
+				C369DFE32A5FDC99004D5298 /* AppDelegate.swift in Sources */,
+				C3A5EC6B2A60388C00FCCF2F /* SignupViewModel.swift in Sources */,
+				C369E00C2A60237F004D5298 /* ForgotPasswordViewController.swift in Sources */,
+				C369E0082A60232C004D5298 /* ForgotPasswordCoordinator.swift in Sources */,
+				C3A5EC712A60478600FCCF2F /* ForgotPasswordUseCase.swift in Sources */,
+				C369E0062A60231D004D5298 /* SignupCoordinator.swift in Sources */,
+				C3A5EC692A60387D00FCCF2F /* LoginViewModel.swift in Sources */,
+				C369DFE52A5FDC99004D5298 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C369DFED2A5FDC9A004D5298 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C369DFEE2A5FDC9A004D5298 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C369DFF12A5FDC9A004D5298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C369DFF22A5FDC9A004D5298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C369DFF42A5FDC9A004D5298 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-MVVM-Coordinator-CleanArchitecture/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test..Swift-MVVM-Coordinator-CleanArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C369DFF52A5FDC9A004D5298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-MVVM-Coordinator-CleanArchitecture/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test..Swift-MVVM-Coordinator-CleanArchitecture";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C369DFDA2A5FDC99004D5298 /* Build configuration list for PBXProject "Swift-MVVM-Coordinator-CleanArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C369DFF12A5FDC9A004D5298 /* Debug */,
+				C369DFF22A5FDC9A004D5298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C369DFF32A5FDC9A004D5298 /* Build configuration list for PBXNativeTarget "Swift-MVVM-Coordinator-CleanArchitecture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C369DFF42A5FDC9A004D5298 /* Debug */,
+				C369DFF52A5FDC9A004D5298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C369DFD72A5FDC99004D5298 /* Project object */;
+}
