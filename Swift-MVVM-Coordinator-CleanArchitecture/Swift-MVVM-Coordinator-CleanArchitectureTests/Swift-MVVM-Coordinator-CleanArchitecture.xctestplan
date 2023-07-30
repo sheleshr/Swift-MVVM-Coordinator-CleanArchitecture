@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "46C1E034-62C6-4E1D-AAA0-213872068150",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Swift-MVVM-Coordinator-CleanArchitecture.xcodeproj",
+      "identifier" : "C369DFDE2A5FDC99004D5298",
+      "name" : "Swift-MVVM-Coordinator-CleanArchitecture"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Swift-MVVM-Coordinator-CleanArchitecture.xcodeproj",
+        "identifier" : "A6990DFD2A71300B004A969E",
+        "name" : "Swift-MVVM-Coordinator-CleanArchitectureTests"
+      }
+    }
+  ],
+  "version" : 1
+}

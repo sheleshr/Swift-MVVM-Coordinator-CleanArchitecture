@@ -40,7 +40,12 @@ extension LoginCoordinator:LoginViewDelegate{
         self.childCoordinators.append(forgotCoordinator)
         forgotCoordinator.start()
     }
-    
+    func naviationToHome(){
+        childCoordinators = []
+        Auth.shared.isAuthenticated = true
+        navigationController.viewControllers = []
+        
+    }
     
 }
 extension LoginCoordinator:SignupCoordinatorDelegate_Previous{

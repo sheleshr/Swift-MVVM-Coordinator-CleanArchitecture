@@ -10,7 +10,7 @@ import Combine
 
 protocol ForgotPasswordViewDelegate:AnyObject{
     func goBack()
-    
+    func showAlert(title:String, message:String)
 }
 
 class ForgotPasswordViewController: UIViewController {
@@ -57,7 +57,7 @@ class ForgotPasswordViewController: UIViewController {
         // Do any additional setup after loading the view. self.txtFdEmail.addTarget(self, action: #emailDidEndEditing, for: .re)
     }
     
-    func bindViews(){
+    private func bindViews(){
         vm.showActivity
             .receive(on: DispatchQueue.main)
             .sink {[weak self] show in
@@ -80,25 +80,31 @@ class ForgotPasswordViewController: UIViewController {
             }
             .store(in: &cancellable)
         
-        self.vm.submitSubject
-            .receive(on: DispatchQueue.main)
-            .sink {[weak self] completion in
-            switch completion{
-            case .finished:
-                self?.coordinator?.goBack()
-            case .failure(let er):
-                print(er.localizedDescription)
-                self?.coordinator?.goBack()
-            }
-        } receiveValue:{_ in
-            
-        }.store(in: &cancellable)
+//        self.vm.submitSubject
+//            .receive(on: DispatchQueue.main)
+//            .sink {[weak self] completion in
+//            switch completion{
+//            case .finished:
+//                self?.coordinator?.goBack()
+//            case .failure(let er):
+//                print(er.localizedDescription)
+//                self?.coordinator?.goBack()
+//            }
+//        } receiveValue:{_ in
+//            
+//        }.store(in: &cancellable)
 
-        
+        self.vm.submitResult
+            .receive(on: DispatchQueue.main)
+            .sink {[weak self] responseStr in
+                self?.coordinator?.showAlert(title: "Forgot Password", message: responseStr)
+            }
+            .store(in: &cancellable)
     }
     
     
     @IBAction func backBtnAction(_ sender: Any) {
+        vm.cleanup()
         coordinator?.goBack()
     }
     

@@ -6,32 +6,42 @@
 //
 
 import UIKit
+import Combine
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
-    var rootCoordinator:LoginCoordinator?
-
+    var rootCoordinator:Coordinator?
+    
+    var subscription:AnyCancellable?
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
-        
         if scene.windows.count == 0 {
-            
-            let nav = UINavigationController()
-            nav.setNavigationBarHidden(true, animated: false)
-            //nav.setToolbarHidden(true, animated: false)
-            
-            window = UIWindow(windowScene: scene)
-            window?.rootViewController = nav
-
-            self.rootCoordinator = LoginCoordinator(navigationController: nav)
-            self.rootCoordinator?.start()
-
-            window?.makeKeyAndVisible()
+            subscription = Auth.shared
+                .$isAuthenticated
+                .receive(on: DispatchQueue.main)
+                .sink {[unowned self] isLoggedIn in
+                    
+                    let nav = UINavigationController()
+                    nav.setNavigationBarHidden(true, animated: false)
+                    
+                    if isLoggedIn == false {
+                        self.rootCoordinator = LoginCoordinator(navigationController: nav)
+                        self.rootCoordinator?.start()
+                    }else{
+                        self.rootCoordinator = HomeCoordinator(navigationController: nav)
+                        self.rootCoordinator?.start()
+                    }
+                    
+                    self.window = UIWindow(windowScene: scene)
+                    self.window?.rootViewController = nav
+                    self.window?.makeKeyAndVisible()
+            }
         }
         
         

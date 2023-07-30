@@ -7,16 +7,16 @@
 
 import Foundation
 import Combine
-protocol ForgotPasswordStoreInterface {
+protocol ForgotPasswordStoreInterface:AnyObject {
     func submitForgotPassword(email:String) -> AnyPublisher<Bool, Never>
 }
 
 class ForgotPasswordStore: ForgotPasswordStoreInterface {
     func submitForgotPassword(email: String) -> AnyPublisher<Bool, Never> {
         print("RECEIVE EMAIL:",email)
-        return Future {[weak self] promis in
+        return Future { promis in
             //self?.showActivity.send(true)
-            DispatchQueue.global().asyncAfter(wallDeadline: .now()+3) {
+            DispatchQueue.global().asyncAfter(wallDeadline: .now()+1) {
                 //self?.showActivity.send(false)
                 promis(.success(true))
                 

@@ -10,6 +10,7 @@ import UIKit
 
 protocol ForgotPasswordCoordinator_Previous:AnyObject{
     func navigateToPrevious()
+    
 }
 
 
@@ -35,6 +36,18 @@ class ForgotPasswordCoordinator:Coordinator{
 extension ForgotPasswordCoordinator:ForgotPasswordViewDelegate{
     func goBack() {
         delegate?.navigateToPrevious()
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alertCoordinator = AlertCoordinator(rootVC: self.navigationController, title: title, message: message)
+        alertCoordinator.delegate = self
+        self.childCoordinators.append(alertCoordinator)
+        alertCoordinator.start()
+    }
+}
+extension ForgotPasswordCoordinator:AlertCoordinatorActionDelegate{
+    func hideAlert() {
+        self.goBack()
     }
     
     

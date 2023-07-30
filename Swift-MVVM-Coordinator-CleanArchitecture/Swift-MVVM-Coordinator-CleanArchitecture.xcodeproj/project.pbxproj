@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6990E0B2A71306C004A969E /* MockForgotPasswordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E0A2A71306C004A969E /* MockForgotPasswordStore.swift */; };
+		A6990E132A714725004A969E /* ForgotPasswordVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E122A714725004A969E /* ForgotPasswordVMTests.swift */; };
+		A6990E162A7172B5004A969E /* AlertCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E152A7172B5004A969E /* AlertCoordinator.swift */; };
+		A6990E182A7398DD004A969E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E172A7398DD004A969E /* HomeCoordinator.swift */; };
+		A6990E1B2A739AA5004A969E /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E1A2A739AA5004A969E /* Auth.swift */; };
+		A6990E1D2A739E93004A969E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6990E1C2A739E93004A969E /* Home.storyboard */; };
+		A6990E1F2A739F07004A969E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E1E2A739F07004A969E /* HomeViewController.swift */; };
+		A6990E212A73A3F9004A969E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E202A73A3F9004A969E /* HomeViewModel.swift */; };
+		A6990E232A73AECD004A969E /* LoginVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E222A73AECD004A969E /* LoginVMTests.swift */; };
+		A6990E252A73BBD3004A969E /* HomeVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E242A73BBD3004A969E /* HomeVMTests.swift */; };
+		A6990E282A73C060004A969E /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6990E272A73C060004A969E /* XCTestCaseExtensions.swift */; };
 		C369DFE32A5FDC99004D5298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369DFE22A5FDC99004D5298 /* AppDelegate.swift */; };
 		C369DFE52A5FDC99004D5298 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C369DFE42A5FDC99004D5298 /* SceneDelegate.swift */; };
 		C369DFEC2A5FDC9A004D5298 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C369DFEB2A5FDC9A004D5298 /* Assets.xcassets */; };
@@ -26,7 +37,30 @@
 		C3A5EC732A60481B00FCCF2F /* ForgotPasswordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5EC722A60481B00FCCF2F /* ForgotPasswordStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A6990E022A71300B004A969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C369DFD72A5FDC99004D5298 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C369DFDE2A5FDC99004D5298;
+			remoteInfo = "Swift-MVVM-Coordinator-CleanArchitecture";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A6990DFE2A71300B004A969E /* Swift-MVVM-Coordinator-CleanArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-MVVM-Coordinator-CleanArchitectureTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6990E0A2A71306C004A969E /* MockForgotPasswordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockForgotPasswordStore.swift; sourceTree = "<group>"; };
+		A6990E0D2A71337D004A969E /* Swift-MVVM-Coordinator-CleanArchitecture.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Swift-MVVM-Coordinator-CleanArchitecture.xctestplan"; path = "Swift-MVVM-Coordinator-CleanArchitectureTests/Swift-MVVM-Coordinator-CleanArchitecture.xctestplan"; sourceTree = "<group>"; };
+		A6990E122A714725004A969E /* ForgotPasswordVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVMTests.swift; sourceTree = "<group>"; };
+		A6990E152A7172B5004A969E /* AlertCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCoordinator.swift; sourceTree = "<group>"; };
+		A6990E172A7398DD004A969E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		A6990E1A2A739AA5004A969E /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		A6990E1C2A739E93004A969E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A6990E1E2A739F07004A969E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A6990E202A73A3F9004A969E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A6990E222A73AECD004A969E /* LoginVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVMTests.swift; sourceTree = "<group>"; };
+		A6990E242A73BBD3004A969E /* HomeVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVMTests.swift; sourceTree = "<group>"; };
+		A6990E272A73C060004A969E /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
 		C369DFDF2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-MVVM-Coordinator-CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C369DFE22A5FDC99004D5298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C369DFE42A5FDC99004D5298 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +83,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A6990DFB2A71300B004A969E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C369DFDC2A5FDC99004D5298 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,10 +100,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6990DFF2A71300B004A969E /* Swift-MVVM-Coordinator-CleanArchitectureTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6990E292A73DE20004A969E /* ViewControllerTest */,
+				A6990E262A73BFE8004A969E /* Common */,
+				A6990E112A7146FF004A969E /* ViewModelTest */,
+				A6990E0E2A714664004A969E /* UseCase */,
+				A6990E092A713047004A969E /* DataLayer */,
+			);
+			path = "Swift-MVVM-Coordinator-CleanArchitectureTests";
+			sourceTree = "<group>";
+		};
+		A6990E092A713047004A969E /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A6990E0A2A71306C004A969E /* MockForgotPasswordStore.swift */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		A6990E0E2A714664004A969E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		A6990E112A7146FF004A969E /* ViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				A6990E122A714725004A969E /* ForgotPasswordVMTests.swift */,
+				A6990E222A73AECD004A969E /* LoginVMTests.swift */,
+				A6990E242A73BBD3004A969E /* HomeVMTests.swift */,
+			);
+			path = ViewModelTest;
+			sourceTree = "<group>";
+		};
+		A6990E192A7399BA004A969E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6990E1A2A739AA5004A969E /* Auth.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A6990E262A73BFE8004A969E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A6990E272A73C060004A969E /* XCTestCaseExtensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A6990E292A73DE20004A969E /* ViewControllerTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllerTest;
+			sourceTree = "<group>";
+		};
 		C369DFD62A5FDC99004D5298 = {
 			isa = PBXGroup;
 			children = (
+				A6990E0D2A71337D004A969E /* Swift-MVVM-Coordinator-CleanArchitecture.xctestplan */,
 				C369DFE12A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */,
+				A6990DFF2A71300B004A969E /* Swift-MVVM-Coordinator-CleanArchitectureTests */,
 				C369DFE02A5FDC99004D5298 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				C369DFDF2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture.app */,
+				A6990DFE2A71300B004A969E /* Swift-MVVM-Coordinator-CleanArchitectureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,11 +182,13 @@
 		C369DFE12A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				C369DFFB2A5FEF37004D5298 /* Auth.storyboard */,
+				C369DFED2A5FDC9A004D5298 /* LaunchScreen.storyboard */,
+				A6990E1C2A739E93004A969E /* Home.storyboard */,
+				A6990E192A7399BA004A969E /* Utils */,
 				C3A5EC6F2A60474D00FCCF2F /* Data-Layer */,
 				C3A5EC6E2A60472D00FCCF2F /* Domain-Layer */,
 				C3A5EC672A60385F00FCCF2F /* ViewModel */,
-				C369DFFB2A5FEF37004D5298 /* Auth.storyboard */,
-				C369DFED2A5FDC9A004D5298 /* LaunchScreen.storyboard */,
 				C369E0022A5FF7E4004D5298 /* Coordinators */,
 				C369DFFD2A5FEFF3004D5298 /* ViewControllers */,
 				C369DFF62A5FDD26004D5298 /* ArchitectureBase */,
@@ -108,6 +214,7 @@
 				C369E0002A5FF28A004D5298 /* LoginViewController.swift */,
 				C369E0092A602373004D5298 /* SignupViewController.swift */,
 				C369E00B2A60237F004D5298 /* ForgotPasswordViewController.swift */,
+				A6990E1E2A739F07004A969E /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -115,9 +222,11 @@
 		C369E0022A5FF7E4004D5298 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				A6990E172A7398DD004A969E /* HomeCoordinator.swift */,
 				C369E0032A5FF801004D5298 /* LoginCoordinator.swift */,
 				C369E0052A60231D004D5298 /* SignupCoordinator.swift */,
 				C369E0072A60232C004D5298 /* ForgotPasswordCoordinator.swift */,
+				A6990E152A7172B5004A969E /* AlertCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -128,6 +237,7 @@
 				C3A5EC682A60387D00FCCF2F /* LoginViewModel.swift */,
 				C3A5EC6A2A60388C00FCCF2F /* SignupViewModel.swift */,
 				C3A5EC6C2A60389F00FCCF2F /* ForgotPasswordViewModel.swift */,
+				A6990E202A73A3F9004A969E /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -151,6 +261,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A6990DFD2A71300B004A969E /* Swift-MVVM-Coordinator-CleanArchitectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6990E062A71300B004A969E /* Build configuration list for PBXNativeTarget "Swift-MVVM-Coordinator-CleanArchitectureTests" */;
+			buildPhases = (
+				A6990DFA2A71300B004A969E /* Sources */,
+				A6990DFB2A71300B004A969E /* Frameworks */,
+				A6990DFC2A71300B004A969E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6990E032A71300B004A969E /* PBXTargetDependency */,
+			);
+			name = "Swift-MVVM-Coordinator-CleanArchitectureTests";
+			productName = "Swift-MVVM-Coordinator-CleanArchitectureTests";
+			productReference = A6990DFE2A71300B004A969E /* Swift-MVVM-Coordinator-CleanArchitectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C369DFDE2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C369DFF32A5FDC9A004D5298 /* Build configuration list for PBXNativeTarget "Swift-MVVM-Coordinator-CleanArchitecture" */;
@@ -175,9 +303,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					A6990DFD2A71300B004A969E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = C369DFDE2A5FDC99004D5298;
+					};
 					C369DFDE2A5FDC99004D5298 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -197,11 +329,19 @@
 			projectRoot = "";
 			targets = (
 				C369DFDE2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */,
+				A6990DFD2A71300B004A969E /* Swift-MVVM-Coordinator-CleanArchitectureTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A6990DFC2A71300B004A969E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C369DFDD2A5FDC99004D5298 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,34 +349,60 @@
 				C369DFFC2A5FEF37004D5298 /* Auth.storyboard in Resources */,
 				C369DFEF2A5FDC9A004D5298 /* LaunchScreen.storyboard in Resources */,
 				C369DFEC2A5FDC9A004D5298 /* Assets.xcassets in Resources */,
+				A6990E1D2A739E93004A969E /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A6990DFA2A71300B004A969E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6990E282A73C060004A969E /* XCTestCaseExtensions.swift in Sources */,
+				A6990E232A73AECD004A969E /* LoginVMTests.swift in Sources */,
+				A6990E0B2A71306C004A969E /* MockForgotPasswordStore.swift in Sources */,
+				A6990E132A714725004A969E /* ForgotPasswordVMTests.swift in Sources */,
+				A6990E252A73BBD3004A969E /* HomeVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C369DFDB2A5FDC99004D5298 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6990E212A73A3F9004A969E /* HomeViewModel.swift in Sources */,
 				C3A5EC6D2A60389F00FCCF2F /* ForgotPasswordViewModel.swift in Sources */,
 				C369E0012A5FF28A004D5298 /* LoginViewController.swift in Sources */,
 				C369DFF82A5FDEC5004D5298 /* Coordinator.swift in Sources */,
 				C369E00A2A602373004D5298 /* SignupViewController.swift in Sources */,
 				C369E0042A5FF801004D5298 /* LoginCoordinator.swift in Sources */,
+				A6990E1F2A739F07004A969E /* HomeViewController.swift in Sources */,
 				C3A5EC732A60481B00FCCF2F /* ForgotPasswordStore.swift in Sources */,
 				C369DFE32A5FDC99004D5298 /* AppDelegate.swift in Sources */,
+				A6990E1B2A739AA5004A969E /* Auth.swift in Sources */,
 				C3A5EC6B2A60388C00FCCF2F /* SignupViewModel.swift in Sources */,
+				A6990E182A7398DD004A969E /* HomeCoordinator.swift in Sources */,
 				C369E00C2A60237F004D5298 /* ForgotPasswordViewController.swift in Sources */,
 				C369E0082A60232C004D5298 /* ForgotPasswordCoordinator.swift in Sources */,
 				C3A5EC712A60478600FCCF2F /* ForgotPasswordUseCase.swift in Sources */,
 				C369E0062A60231D004D5298 /* SignupCoordinator.swift in Sources */,
 				C3A5EC692A60387D00FCCF2F /* LoginViewModel.swift in Sources */,
+				A6990E162A7172B5004A969E /* AlertCoordinator.swift in Sources */,
 				C369DFE52A5FDC99004D5298 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6990E032A71300B004A969E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C369DFDE2A5FDC99004D5298 /* Swift-MVVM-Coordinator-CleanArchitecture */;
+			targetProxy = A6990E022A71300B004A969E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C369DFED2A5FDC9A004D5298 /* LaunchScreen.storyboard */ = {
@@ -250,6 +416,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A6990E042A71300B004A969E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.test.Swift-MVVM-Coordinator-CleanArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-MVVM-Coordinator-CleanArchitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-MVVM-Coordinator-CleanArchitecture";
+			};
+			name = Debug;
+		};
+		A6990E052A71300B004A969E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.test.Swift-MVVM-Coordinator-CleanArchitectureTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-MVVM-Coordinator-CleanArchitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Swift-MVVM-Coordinator-CleanArchitecture";
+			};
+			name = Release;
+		};
 		C369DFF12A5FDC9A004D5298 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -367,6 +569,7 @@
 		C369DFF42A5FDC9A004D5298 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -393,6 +596,7 @@
 		C369DFF52A5FDC9A004D5298 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -419,6 +623,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A6990E062A71300B004A969E /* Build configuration list for PBXNativeTarget "Swift-MVVM-Coordinator-CleanArchitectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6990E042A71300B004A969E /* Debug */,
+				A6990E052A71300B004A969E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C369DFDA2A5FDC99004D5298 /* Build configuration list for PBXProject "Swift-MVVM-Coordinator-CleanArchitecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

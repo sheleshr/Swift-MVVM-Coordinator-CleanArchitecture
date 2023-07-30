@@ -9,13 +9,23 @@ import Foundation
 import Combine
 class ForgotPasswordUseCase {
     
-    private var forgotPasswordRepo =  ForgotPasswordStore()
-    var cancellable:AnyCancellable?
+    let forgotPasswordRepo: ForgotPasswordStoreInterface
+    var subscriptions = Set<AnyCancellable>()
     
+    init(forgotPasswordRepo: ForgotPasswordStoreInterface = ForgotPasswordStore()) {
+        self.forgotPasswordRepo = forgotPasswordRepo
+        
+    }
     func execute(email:String,completion:@escaping (Bool) -> Void) {
-       cancellable = forgotPasswordRepo.submitForgotPassword(email: email)
+       forgotPasswordRepo.submitForgotPassword(email: email)
             .sink { val in
-            completion(true)
+            completion(val)
+        }
+            .store(in: &subscriptions)
+    }
+    deinit{
+        subscriptions.forEach { subscription in
+            subscription.cancel()
         }
     }
 }
